@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  
+}
+h1{
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.wrapper {
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+nav ul {
+ 
+  padding: 10px;
+  background-color: #333;
+  text-align: center;
+  
+}
+
+nav ul li {list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: red;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: lightgray;
+}
+
+.menu{
+  display: flex;
+  padding: 10px;
+  background-color: #333;
+  text-align: center;
+  list-style: none; 
+  justify-content: center;
+  gap: 16px;
+ 
+}
+.menu li a{
+   text-decoration: none;
+   color: white;
+}
+
+
+.hero {
+  display: flex;
+
+ align-items: center;
+  padding: 40px;
+  background-color: #e3e3e3;
+}
+
+.hero img {
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.hero-text {
+
+ display: flex;
+ flex-direction: column;
+
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.feature img {
+  width: 40%;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+
+  }
+
+  nav ul {
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  .hero img {
+    width: 200px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    padding: 5px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}
